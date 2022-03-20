@@ -146,7 +146,7 @@
 
 /*media*/
 @media screen and (max-width: 680px) {
-  /* bar */
+  /* mobile bar */
   .nav_bar .menu_list {
     display: none;
   }
