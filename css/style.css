@@ -1,0 +1,327 @@
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --black-color: #0d0d0d;
+  --blue-color: #065fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #585858;
+  --grey-light-color: #9a9a9a;
+
+  /* size */
+  --padding: 12px;
+  --padding-large: 25px;
+  --padding-extra: 75px;
+
+  /* Font size */
+  --font-extra: 30px;
+  --font-large: 20px;
+  --font-medium: 16px;
+  --font-small: 14px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+
+.mobile_menu_list {
+  display: none;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+}
+.nav_bar .toggle_button {
+  display: none;
+}
+
+/*logo And Title*/
+.nav_bar .logoAndTitle {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.nav_bar .logoAndTitle .logo {
+  width: 70px;
+}
+.nav_bar .logoAndTitle .title {
+  font-size: var(--font-extra);
+  color: var(--black-color);
+  margin: var(--padding);
+}
+
+/* menu list */
+.nav_bar .menu_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav_bar .menu_list li {
+  list-style: none;
+}
+.nav_bar .menu_list li a {
+  text-decoration: none;
+  font-size: var(--font-large);
+  color: var(--black-color);
+  margin: var(--padding);
+}
+
+/* main container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main explain */
+.container .main_explain {
+  display: flex;
+  height: 60vh;
+  flex-direction: row;
+  position: relative;
+}
+
+.container .main_explain img {
+  position: absolute;
+  width: 60vw;
+  height: 35vh;
+  left: 10%;
+
+  top: 10%;
+  max-width: 700px;
+}
+.container .main_explain .text {
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--grey-dark-color);
+  width: 60vw;
+  height: 35vh;
+  top: 40%;
+  right: 10%;
+  color: var(--white-color);
+  box-shadow: -5px 7px 7px rgb(0 0 0 / 30%);
+  max-width: 700px;
+}
+.container .main_explain .text .title {
+  font-size: 40px;
+  margin: var(--padding-large);
+}
+.container .main_explain .text p {
+  margin: var(--padding-large);
+  font-size: var(--font-large);
+}
+
+/* card */
+
+.act_title {
+  font-size: var(--font-extra);
+  padding: var(--padding-extra);
+}
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities .card {
+  display: flex;
+  position: relative;
+  background-color: var(--grey-dark-color);
+  width: 600px;
+  height: 300px;
+  margin: var(--padding);
+  border-radius: 35px;
+}
+.activities .card .act_img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 35px;
+}
+.activities .card .text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--grey-dark-color);
+  right: 5%;
+  width: 300px;
+  height: 300px;
+}
+.activities .card .text .title {
+  color: var(--white-color);
+  font-size: var(--font-large);
+  margin: var(--padding-large);
+  padding-top: var(--padding-large);
+}
+
+.activities .card .text .detail {
+  color: var(--white-color);
+  font-size: var(--font-medium);
+  padding-left: var(--padding-large);
+}
+
+/* other */
+.other {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-extra);
+}
+.other .side {
+  padding: var(--padding-large);
+  font-size: var(--font-extra);
+  border-right: solid 3px black;
+}
+.other .text {
+  font-size: var(--font-large);
+  padding: var(--padding-large);
+}
+
+footer {
+  background-color: var(--grey-dark-color);
+  height: 200px;
+}
+footer .boss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-large);
+}
+footer .boss p {
+  font-size: var(--font-medium);
+  color: var(--white-color);
+  margin: var(--padding);
+}
+
+@media screen and (max-width: 680px) {
+  .nav_bar .menu_list {
+    display: none;
+  }
+
+  /*mobile menu */
+  .nav_bar.clamp {
+    box-shadow: none;
+    border: none;
+  }
+  .mobile_menu_list.clamp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+  }
+  .mobile_menu_list li {
+    list-style: none;
+    margin: var(--padding);
+  }
+  .mobile_menu_list li a {
+    text-decoration: none;
+    font-size: var(--font-large);
+    color: var(--black-color);
+    margin: var(--padding);
+  }
+
+  /* bar */
+
+  .nav_bar .toggle_button {
+    display: block;
+    font-size: 30px;
+    margin: var(--padding);
+    color: var(--black-color);
+  }
+  .nav_bar .toggle_button.clicked {
+    color: var(--grey-light-color);
+  }
+
+  /* card */
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activities .card {
+    width: 350px;
+    height: 200px;
+  }
+  .activities .card .act_img {
+    display: none;
+  }
+  .activities .card .text {
+    left: 0%;
+    width: 350px;
+    height: 200px;
+    border-radius: 35%;
+  }
+  .activities .card .text .title {
+    padding-top: var(--padding);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  /* main explain */
+
+  .container .main_explain img {
+    width: 700px;
+    height: 400px;
+
+    left: 15%;
+    top: 10%;
+  }
+  .container .main_explain .text {
+    width: 700px;
+    height: 400px;
+    top: 40%;
+    right: 15%;
+  }
+
+  /* card */
+  .activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .activities .card {
+    width: 350px;
+    height: 430px;
+  }
+  .activities .card .act_img {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    border-radius: 35px;
+  }
+  .activities .card .text {
+    right: 0%;
+    top: 50%;
+    width: 350px;
+    height: 100px;
+  }
+  .activities .card .text .title {
+    padding-top: var(--padding);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* main explain */
+
+  .container .main_explain img {
+    width: 700px;
+    height: 400px;
+
+    left: 22%;
+    top: 10%;
+  }
+  .container .main_explain .text {
+    width: 700px;
+    height: 400px;
+    top: 40%;
+    right: 22%;
+  }
+}
