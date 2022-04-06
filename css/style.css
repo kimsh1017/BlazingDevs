@@ -237,6 +237,13 @@ footer .boss p {
   .nav_bar .toggle_button.clicked {
     color: var(--grey-light-color);
   }
+  /*container*/
+  .container .main_explain .text .title {
+    font-size: var(--font-large);
+  }
+  .container .main_explain .text p{
+    font-size: var(--font-medium);
+  }
 
   /* card */
   .activities {
@@ -259,7 +266,22 @@ footer .boss p {
     border-radius: 35%;
   }
   .activities .card .text .title {
-    padding-top: var(--padding);
+    font-size: var(--font-medium);
+
+    margin: var(--padding);
+    padding:var(--padding) 0 ;
+  }
+  .activities .card .text .detail{
+    font-size: var(--font-medium);
+  }
+
+  /* other */
+  .other {
+    flex-direction: column;
+  }
+  .other .side{
+    border-right: none;
+    border-bottom: solid 2px black;
   }
 }
 
