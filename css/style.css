@@ -273,6 +273,10 @@ footer .boss p {
   }
   .activities .card .text .detail{
     font-size: var(--font-medium);
+
+    margin: 0;
+    padding: var(--padding);
+    margin-left: calc(var(--padding)/2);
   }
 
   /* other */

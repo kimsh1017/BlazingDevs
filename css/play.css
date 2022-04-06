@@ -156,7 +156,7 @@
   }
   .mobile_menu_list li a {
     text-decoration: none;
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
     color: var(--black-color);
     margin: var(--padding);
   }
@@ -183,7 +183,9 @@
     width: 70vw;
     height: 70vw;
   }
-
+  .card p {
+    font-size: var(--font-medium);
+  }
   .card img {
     width: 70vw;
     height: 60vw;

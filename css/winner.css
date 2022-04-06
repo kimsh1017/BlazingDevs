@@ -178,12 +178,19 @@
   }
   .mobile_menu_list li a {
     text-decoration: none;
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
     color: var(--black-color);
     margin: var(--padding);
   }
 
   /*records*/
+  .records {
+    padding: 0 var(--padding);
+  }
+  .records .text {
+    margin: 0 var(--padding);
+  }
+
   .records_title {
     display: flex;
     justify-content: center;

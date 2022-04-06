@@ -172,7 +172,7 @@
   }
   .mobile_menu_list li a {
     text-decoration: none;
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
     color: var(--black-color);
     margin: var(--padding);
   }
@@ -188,12 +188,14 @@
     width: 200px;
     margin: var(--padding);
     padding: 10px;
+    font-size: var(--font-small);
   }
   .card .textAndImg img {
     display: none;
   }
   .card .textAndImg .text {
-    margin-left: 0px;
+    margin-left: var(--padding);
+    padding: 0;
     margin-bottom: var(--padding);
   }
   .card .title {
