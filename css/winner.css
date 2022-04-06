@@ -206,6 +206,15 @@
   }
   .card table {
     margin-top: 0;
-    width: 500px;
+    width: 400px;
+  }
+
+  .card table td{
+    font-size: var(--font-medium);
+  }
+
+  .card table .trophy {
+    width: 160px;
+    margin: var(--padding);
   }
 }
