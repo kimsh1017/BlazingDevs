@@ -222,6 +222,10 @@ footer .boss p {
   .nav_bar .menu_list {
     display: none;
   }
+  .nav_bar .menu_list li:hover{
+    border-bottom: solid 2px black;
+  }
+  
   .nav_bar .menu_list.clamp {
     display: flex;
     flex-direction: row;
